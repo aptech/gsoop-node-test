@@ -1,0 +1,25 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "LD_LIBRARY_PATH=$MTENGHOME:$LD_LIBRARY_PATH QT_PLUGIN_PATH=$MTENGHOME/plugins QT_QPA_PLATFORM=offscreen node ./index.js",
+    "debug": "LD_LIBRARY_PATH=$MTENGHOME:$LD_LIBRARY_PATH QT_PLUGIN_PATH=$MTENGHOME/plugins QT_QPA_PLATFORM=offscreen node --inspect-brk=9222 ./index.js",
+    "test": "LD_LIBRARY_PATH=$MTENGHOME:$LD_LIBRARY_PATH QT_PLUGIN_PATH=$MTENGHOME/plugins QT_QPA_PLATFORM=offscreen mocha"
+  },
+  "dependencies": {
+    "ge": "github:aptech/gsoop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aptech/gsoop-node-test.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Aptech Systems",
+  "description": "Test runner for gsoop node.js bindings for the GAUSS Engine."
+}
